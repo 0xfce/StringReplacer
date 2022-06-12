@@ -84,8 +84,8 @@ public class Utils {
                     out.putNextEntry(zipEntry);
                     FileInputStream in = new FileInputStream(file);
                     byte[] buffer = new byte[1024];
-                    int size;
-                    while ((size = in.read(buffer)) != -1) out.write(buffer, 0, size);
+                    int length;
+                    while ((size = in.read(buffer)) != -1) out.write(buffer, 0, length);
                     in.close();
                     out.closeEntry();
 
