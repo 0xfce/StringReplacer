@@ -1,2 +1,2 @@
 # StringReplacer
-A simple string replacer GUI using ASM Framework
+A simple GUI string replacer using ASM Framework
