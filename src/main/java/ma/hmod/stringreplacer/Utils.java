@@ -37,7 +37,6 @@ public class Utils {
                         if (method != null) {
                             for (AbstractInsnNode node : method.instructions.toArray()) {
                                 if (node instanceof LdcInsnNode) {
-                                	System.out.println(oldStr);
                                     LdcInsnNode str = (LdcInsnNode) node;
                                     if(caseSensetive ? (equals ? str.cst.toString().equals(oldStr) : str.cst.toString().contains(oldStr)) : (equals ? str.cst.toString().toLowerCase().equals(oldStr) : str.cst.toString().toLowerCase().contains(oldStr))) {
                                     	debug("\nString found in " + classNode.name.concat(".class"));
